@@ -1,0 +1,4 @@
+# Test dependencies go here.
+-r _base.txt
+coverage.py==3.6
+django-discover-runner==0.2.2

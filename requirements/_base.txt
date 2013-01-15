@@ -1,0 +1,5 @@
+https://www.djangoproject.com/download/1.5c1/tarball/
+bpython==0.12
+django-braces==0.2.1
+django-model-utils==1.1.0
+South==0.7.6
