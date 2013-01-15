@@ -18,6 +18,8 @@ Installation of Dependencies
 
 First, make sure you are using virtualenv (http://www.virtualenv.org).
 
+Then, depending on where you are installing dependencies:
+
 In development::
 
     $ pip install -r requirements/local.txt
@@ -26,7 +28,7 @@ For production::
 
     $ pip install -r requirements.txt
 
-*note: We install production requirements this way because so many Platforms as a Services expect a requirements.txt file in the root of projects.*
+*note: We install production requirements this way because many Platforms as a Services expect a requirements.txt file in the root of projects.*
 
 Acknowledgements
 ================
