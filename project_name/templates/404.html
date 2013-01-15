@@ -1,9 +1,9 @@
-{% verbatim %}{% extends "base.html" %}
+{% templatetag openblock %} extends "base.html" {% templatetag closeblock %}
 
-{% block title %}Page Not found{% endblock %}
+{% templatetag openblock %} block title {% templatetag closeblock %}Page Not found{% templatetag openblock %} endblock {% templatetag closeblock %}
 
-{% block page_title %}Page Not found{% endblock page_title %}
+{% templatetag openblock %} block page_title {% templatetag closeblock %}Page Not found{% templatetag openblock %} endblock page_title {% templatetag closeblock %}
 
-{% block content %}
+{% templatetag openblock %} block content {% templatetag closeblock %}
 <p>This is not the page you were looking for.</p>
-{% endblock content %}{% endverbatim %}
+{% templatetag openblock %} endblock content {% templatetag closeblock %}
