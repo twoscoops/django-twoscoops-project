@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% block title %}{{ project_name }} {% endblock title %}</title>
+    <title>{% block title %}{{ project_name }}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -54,8 +53,11 @@
 
     <div class="container">
 
-      <h1>Example Base Template</h1>
-      <p>Use this document as a way to quick start any new project.
+      <h1>{% block page_title %}Example Base Template{% endblock page_title %}</h1>
+
+      {% block content %}
+        <p>Use this document as a way to quick start any new project.</p>
+      {% endblock content %}
 
     </div> <!-- /container -->
 
@@ -68,6 +70,6 @@
     <!-- place project specific Javascript in this file -->
     <script src="{{ STATIC_URL }}js/project.js"></script>
 
-    {% block extrajs %}{% endblock extrajs%}
+    {% block extra_js %}{% endblock extra_js %}
   </body>
 </html>
