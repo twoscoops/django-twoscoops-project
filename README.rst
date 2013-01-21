@@ -16,7 +16,25 @@ You can choose a different name by running the same command but replacing the wo
 Installation of Dependencies
 ============================
 
-First, make sure you are using virtualenv (http://www.virtualenv.org).
+First, make sure you are using virtualenv (http://www.virtualenv.org)::
+
+    $ mkvirtualenv --distribute icecream
+
+You will also need to ensure that the virtualenv has the project directory
+added to the path::
+
+    $ cd icecream && add2virtualenv `pwd`
+
+This will allow `django-admin.py` to be able to change settings using the
+`--settings` flag.
+
+After setting up the virtualenv, be sure that the `wsgi.py` file in your
+project's application folder has the correct `os.environ` set::
+
+    $ cd icecream/icecream/icecream && vim wsgi.py
+
+Change `project_name.settings.local` to your current project deployment
+configuration.
 
 Then, depending on where you are installing dependencies:
 
