@@ -39,13 +39,9 @@ virtualenv folder will be something like::
 In the pathfile, you will want to include the following code (from
 virtualenvwrapper):
 
-```python
-
-import sys; sys.__plen = len(sys.path)
-/home/<youruser>/icecream/icecream/
-import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
-
-```
+    import sys; sys.__plen = len(sys.path)
+    /home/<youruser>/icecream/icecream/
+    import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
 
 Virtualenvwrapper takes care of this for you by creating the exact same file
 using the `add2virtualenv` command (see above).
