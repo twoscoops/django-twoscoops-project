@@ -37,7 +37,7 @@ virtualenv folder will be something like::
 `~/.virtualenvs/icecream/lib/python2.7/site-directory/`
 
 In the pathfile, you will want to include the following code (from
-virtualenvwrapper)::
+virtualenvwrapper):
 
 ```python
 import sys; sys.__plen = len(sys.path)
