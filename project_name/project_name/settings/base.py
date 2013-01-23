@@ -79,7 +79,7 @@ USE_TZ = True
 
 ########## MEDIA CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-root
-MEDIA_ROOT = normpath(join(DJANGO_ROOT, 'media'))
+MEDIA_ROOT = normpath(join(SITE_ROOT, 'media'))
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#media-url
 MEDIA_URL = '/media/'
@@ -88,14 +88,14 @@ MEDIA_URL = '/media/'
 
 ########## STATIC FILE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-root
-STATIC_ROOT = normpath(join(DJANGO_ROOT, 'static'))
+STATIC_ROOT = normpath(join(SITE_ROOT, 'assets'))
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#static-url
 STATIC_URL = '/static/'
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#std:setting-STATICFILES_DIRS
 STATICFILES_DIRS = (
-    normpath(join(DJANGO_ROOT, 'assets')),
+    normpath(join(SITE_ROOT, 'static')),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/contrib/staticfiles/#staticfiles-finders
@@ -116,7 +116,7 @@ SECRET_KEY = r"{{ secret_key }}"
 ########## FIXTURE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
 FIXTURE_DIRS = (
-    normpath(join(DJANGO_ROOT, 'fixtures')),
+    normpath(join(SITE_ROOT, 'fixtures')),
 )
 ########## END FIXTURE CONFIGURATION
 
@@ -142,7 +142,7 @@ TEMPLATE_LOADERS = (
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#template-dirs
 TEMPLATE_DIRS = (
-    normpath(join(DJANGO_ROOT, 'templates')),
+    normpath(join(SITE_ROOT, 'templates')),
 )
 ########## END TEMPLATE CONFIGURATION
 
@@ -182,7 +182,6 @@ DJANGO_APPS = (
     # Admin panel and documentation:
     'django.contrib.admin',
     # 'django.contrib.admindocs',
-
 )
 
 THIRD_PARTY_APPS = (

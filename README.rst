@@ -61,4 +61,7 @@ For production::
 Acknowledgements
 ================
 
-Many thanks to Randall Degges
+Many thanks to:
+
+    - Juan Riaza
+    - Randall Degges
