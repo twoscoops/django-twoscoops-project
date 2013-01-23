@@ -61,7 +61,7 @@ For production::
 Acknowledgements
 ================
 
-Many thanks to:
+    - Many thanks to Randall Degges for the inspiration to write the book and django-skel.
+    - All of the contributors_ to this project.
 
-    - Juan Riaza
-    - Randall Degges
+.. _contributors: https://github.com/twoscoops/django-twoscoops-project/blob/master/CONTRIBUTORS.txt
