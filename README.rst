@@ -13,19 +13,18 @@ To create a new Django project called '**icecream**' using django-twoscoops-proj
 
 You can choose a different name by running the same command but replacing the word '**icecream**' with something else.
 
-Installation of Dependencies
-============================
+Working Environment
+===================
 
-First, make sure you are using virtualenv (http://www.virtualenv.org)::
+First, make sure you are using virtualenv (http://www.virtualenv.org). Once that's installed, create your virtualenv::
 
-    $ mkvirtualenv --distribute icecream
+    $ virtualenv --distribute icecream
 
 You will also need to ensure that the virtualenv has the project directory
 added to the path. Adding the project directory will allow `django-admin.py` to be able to change settings using the `--settings` flag.
 
-In Linux and Mac OSX, you can install virtualenvwrapper (http://http://virtualenvwrapper.readthedocs.org/en/latest/), which will take care of adding the project path to the `site-directory` for you::
-
-    $ cd icecream && add2virtualenv `pwd`
+Windows
+----------
 
 In Windows, or if you're not comfortable using the command line, you will need
 to add a `.pth` file to the `site-packages` of your virtualenv. If you have
@@ -43,10 +42,17 @@ virtualenvwrapper):
     /home/<youruser>/icecream/icecream/
     import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
 
-Virtualenvwrapper takes care of this for you by creating the exact same file
-using the `add2virtualenv` command (see above).
+Option: virtualenvwrapper
+--------------------------
 
-Then, depending on where you are installing dependencies:
+    In Linux and Mac OSX, you can install virtualenvwrapper (http://http://virtualenvwrapper.readthedocs.org/en/latest/), which will take care of adding the project path to the `site-directory` for you::
+
+        $ cd icecream && add2virtualenv `pwd`
+
+Installation of Dependencies
+=============================
+
+Depending on where you are installing dependencies:
 
 In development::
 
