@@ -17,6 +17,8 @@ def get_env_setting(setting):
 	except KeyError:
 		error_msg = "Set the %s env variable" % setting
 		raise ImproperlyConfigured(error_msg)
+		
+INSTALLED_APPS += ('gunicorn',)
 
 ########## EMAIL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
