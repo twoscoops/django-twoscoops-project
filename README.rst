@@ -4,24 +4,47 @@ django-twoscoops-project
 
 A project template for Django 1.5.
 
-Creating your project
-=====================
+To use this project follow these steps:
 
-To create a new Django project called '**icecream**' using django-twoscoops-project, run the following command (this assumes you have Django 1.5 or 1.4 installated aready)::
+#. Create your working environment
+#. Install Django
+#. Create the new project using the django-two-scoops template
+#. Install additional dependencies
+#. Use the Django admin to create the project
 
-    $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/zipball/master --extension=py,rst,html icecream
-
-You can choose a different name by running the same command but replacing the word '**icecream**' with something else.
+*note: these instructions show creation of a project called "icecream".  You
+should replace this name with the actual name of your project.*
 
 Working Environment
 ===================
 
-First, make sure you are using virtualenv (http://www.virtualenv.org). Once that's installed, create your virtualenv::
+You have several options in setting up your working environment.  We recommend
+using virtualenv to seperate the dependencies of your project from your system's
+python environment.  You can also use virtualenvwrapper to help manage multiple
+virtualenvs across different projects.
+
+Virtualenv Only
+---------------
+
+First, make sure you are using virtualenv (http://www.virtualenv.org). Once
+that's installed, create your virtualenv::
 
     $ virtualenv --distribute icecream
 
 You will also need to ensure that the virtualenv has the project directory
-added to the path. Adding the project directory will allow `django-admin.py` to be able to change settings using the `--settings` flag.
+added to the path. Adding the project directory will allow `django-admin.py` to
+be able to change settings using the `--settings` flag.
+
+Virtualenv with virtualenvwrapper
+--------------------------
+
+In Linux and Mac OSX, you can install virtualenvwrapper (http://http://virtualenvwrapper.readthedocs.org/en/latest/),
+which will take care of managing your virtual environments and adding the
+project path to the `site-directory` for you::
+
+    $ mkdir icecream
+    $ mkvirtualenv -a icecream icecream-dev
+    $ cd icecream && add2virtualenv `pwd`
 
 Windows
 ----------
@@ -42,12 +65,20 @@ virtualenvwrapper):
     /home/<youruser>/icecream/icecream/
     import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
 
-Option: virtualenvwrapper
---------------------------
+Installing Django
+=================
 
-    In Linux and Mac OSX, you can install virtualenvwrapper (http://http://virtualenvwrapper.readthedocs.org/en/latest/), which will take care of adding the project path to the `site-directory` for you::
+To install Django in the new virtual environment, run the following command::
 
-        $ cd icecream && add2virtualenv `pwd`
+    $ pip install django
+
+Creating your project
+=====================
+
+To create a new Django project called '**icecream**' using
+django-twoscoops-project, run the following command::
+
+    $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/zipball/master --extension=py,rst,html icecream
 
 Installation of Dependencies
 =============================
@@ -62,7 +93,8 @@ For production::
 
     $ pip install -r requirements.txt
 
-*note: We install production requirements this way because many Platforms as a Services expect a requirements.txt file in the root of projects.*
+*note: We install production requirements this way because many Platforms as a
+Services expect a requirements.txt file in the root of projects.*
 
 Acknowledgements
 ================
