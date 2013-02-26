@@ -1,4 +1,4 @@
-https://www.djangoproject.com/download/1.5c1/tarball/
+django==1.5
 bpython==0.12
 django-braces==0.2.1
 django-model-utils==1.1.0
