@@ -3,9 +3,9 @@ Daniel Greenfeld
 Juan Riaza
 Faris Chebib
 Garry Polley
-desimone
+@desimone
 Chris Hasenpflug
 Si Feng
-ducky427
+@ducky427
 Benjamin Montgomery
-
+@mozillazg
