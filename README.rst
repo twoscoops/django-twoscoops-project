@@ -37,7 +37,7 @@ be able to change settings using the `--settings` flag.
 Virtualenv with virtualenvwrapper
 --------------------------
 
-In Linux and Mac OSX, you can install virtualenvwrapper (http://http://virtualenvwrapper.readthedocs.org/en/latest/),
+In Linux and Mac OSX, you can install virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/),
 which will take care of managing your virtual environments and adding the
 project path to the `site-directory` for you::
 
