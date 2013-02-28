@@ -1,5 +1,5 @@
-Audrey Roy
-Daniel Greenfeld
+Audrey Roy / @audreyr
+Daniel Greenfeld / @pydanny
 Juan Riaza
 Faris Chebib
 Garry Polley
@@ -9,3 +9,4 @@ Si Feng
 @ducky427
 Benjamin Montgomery
 @mozillazg
+Patti Chen / @pattichen
