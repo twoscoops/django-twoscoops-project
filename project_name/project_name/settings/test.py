@@ -1,4 +1,4 @@
-from base import *
+from .base import *
 
 ########## TEST SETTINGS
 TEST_RUNNER = 'discover_runner.DiscoverRunner'
