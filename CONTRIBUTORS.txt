@@ -11,3 +11,4 @@ Benjamin Montgomery
 @mozillazg
 Patti Chen / @pattichen
 Bouke Haarsma / @bouke
+Remco Wendt / @shanx
