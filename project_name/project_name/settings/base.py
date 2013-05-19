@@ -113,6 +113,13 @@ SECRET_KEY = r"{{ secret_key }}"
 ########## END SECRET CONFIGURATION
 
 
+########## SITE CONFIGURATION
+# Hosts/domain names that are valid for this site
+# See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
+ALLOWED_HOSTS = []
+########## END SITE CONFIGURATION
+
+
 ########## FIXTURE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#std:setting-FIXTURE_DIRS
 FIXTURE_DIRS = (
