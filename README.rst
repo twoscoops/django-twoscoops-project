@@ -19,7 +19,7 @@ Working Environment
 ===================
 
 You have several options in setting up your working environment.  We recommend
-using virtualenv to seperate the dependencies of your project from your system's
+using virtualenv to separate the dependencies of your project from your system's
 python environment.  If on Linux or Mac OS X, you can also use virtualenvwrapper to help manage multiple virtualenvs across different projects.
 
 Virtualenv Only
