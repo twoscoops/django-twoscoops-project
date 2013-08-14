@@ -19,7 +19,7 @@ Working Environment
 ===================
 
 You have several options in setting up your working environment.  We recommend
-using virtualenv to seperate the dependencies of your project from your system's
+using virtualenv to separate the dependencies of your project from your system's
 python environment.  If on Linux or Mac OS X, you can also use virtualenvwrapper to help manage multiple virtualenvs across different projects.
 
 Virtualenv Only
@@ -98,7 +98,7 @@ Services expect a requirements.txt file in the root of projects.*
 Acknowledgements
 ================
 
-    - Many thanks to Randall Degges for the inspiration to write the book and django-skel.
-    - All of the contributors_ to this project.
+- Many thanks to Randall Degges for the inspiration to write the book and django-skel.
+- All of the contributors_ to this project.
 
 .. _contributors: https://github.com/twoscoops/django-twoscoops-project/blob/master/CONTRIBUTORS.txt
