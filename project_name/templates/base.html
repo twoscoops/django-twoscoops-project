@@ -22,10 +22,10 @@
     <![endif]-->
 
     <!-- This file store project specific CSS -->
-    <link href="{% templatetag openblock %} static 'css/project.css' {% templatetag closeblock %}" rel="stylesheet">
+    <link href="{% templatetag openblock %} static 'css/{{ project_name }}.css' {% templatetag closeblock %}" rel="stylesheet">
 
     <!-- Use this to quickly test CSS changes in a template,
-        then move to project.css -->
+        then move to {{ project_name }}.css -->
     {% templatetag openblock %} block extra_css {% templatetag closeblock %}{% templatetag openblock %} endblock extra_css {% templatetag closeblock %}
   </head>
 
@@ -68,7 +68,7 @@
     <script src="{% templatetag openblock %} static 'js/bootstrap.min.js' {% templatetag closeblock %}"></script>
 
     <!-- place project specific Javascript in this file -->
-    <script src="{% templatetag openblock %} static 'js/project.js' {% templatetag closeblock %}"></script>
+    <script src="{% templatetag openblock %} static 'js/{{ project_name }}.js' {% templatetag closeblock %}"></script>
 
     {% templatetag openblock %} block extra_js {% templatetag closeblock %}{% templatetag openblock %} endblock extra_js {% templatetag closeblock %}
   </body>
