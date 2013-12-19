@@ -19,3 +19,4 @@ Richard Barran / @richardbarran
 Kulbir Singh / @kulbir
 Ben Cole / @wengole
 @mozillazg
+Benjamin Petersen / @bnjmn
