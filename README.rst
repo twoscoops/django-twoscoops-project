@@ -79,7 +79,7 @@ django-twoscoops-project, run the following command::
 
     $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/archive/master.zip --extension=py,rst,html icecream_project
     
-If you want to ensure that you are running Django 1.5 era code, please use::
+For Django 1.5 users, we recommend::
 
     $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/archive/1.5.zip --extension=py,rst,html icecream_project
 
