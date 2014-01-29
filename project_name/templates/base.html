@@ -15,7 +15,6 @@
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="{% templatetag openblock %} static 'css/bootstrap-responsive.min.css' {% templatetag closeblock %}" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -23,32 +22,32 @@
     <![endif]-->
 
     <!-- This file store project specific CSS -->
-    <link href="{% templatetag openblock %} static 'css/project.css' {% templatetag closeblock %}" rel="stylesheet">
+    <link href="{% templatetag openblock %} static 'css/{{ project_name }}.css' {% templatetag closeblock %}" rel="stylesheet">
 
     <!-- Use this to quickly test CSS changes in a template,
-        then move to project.css -->
+        then move to {{ project_name }}.css -->
     {% templatetag openblock %} block extra_css {% templatetag closeblock %}{% templatetag openblock %} endblock extra_css {% templatetag closeblock %}
   </head>
 
   <body>
 
     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">{{ project_name }}</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
+          </button>
+          <a class="navbar-brand" href="#">{{ project_name }}</a>
         </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
@@ -69,7 +68,7 @@
     <script src="{% templatetag openblock %} static 'js/bootstrap.min.js' {% templatetag closeblock %}"></script>
 
     <!-- place project specific Javascript in this file -->
-    <script src="{% templatetag openblock %} static 'js/project.js' {% templatetag closeblock %}"></script>
+    <script src="{% templatetag openblock %} static 'js/{{ project_name }}.js' {% templatetag closeblock %}"></script>
 
     {% templatetag openblock %} block extra_js {% templatetag closeblock %}{% templatetag openblock %} endblock extra_js {% templatetag closeblock %}
   </body>
