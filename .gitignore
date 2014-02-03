@@ -15,6 +15,8 @@ build
 
 # Eclipse
 .project
+.pydevproject
+.settings
 
 # Linux Editors
 *~
