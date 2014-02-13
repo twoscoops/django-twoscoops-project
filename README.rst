@@ -35,7 +35,7 @@ added to the path. Adding the project directory will allow `django-admin.py` to
 be able to change settings using the `--settings` flag.
 
 Virtualenv with virtualenvwrapper
---------------------------
+------------------------------------
 
 In Linux and Mac OSX, you can install virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/),
 which will take care of managing your virtual environments and adding the
@@ -45,8 +45,8 @@ project path to the `site-directory` for you::
     $ mkvirtualenv -a icecream icecream-dev
     $ cd icecream && add2virtualenv `pwd`
 
-Windows
-----------
+Using virtualenvwrapper with Windows
+----------------------------------------
 
 In Windows, or if you're not comfortable using the command line, you will need
 to add a `.pth` file to the `site-packages` of your virtualenv. If you have
