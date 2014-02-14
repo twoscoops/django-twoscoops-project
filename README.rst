@@ -48,21 +48,7 @@ project path to the `site-directory` for you::
 Using virtualenvwrapper with Windows
 ----------------------------------------
 
-In Windows, or if you're not comfortable using the command line, you will need
-to add a `.pth` file to the `site-packages` of your virtualenv. If you have
-been following the book's example for the virtualenv directory (pg. 12), then
-you will need to add a python pathfile named `_virtualenv_path_extensions.pth`
-to the `site-packages`. If you have been following the book, then your
-virtualenv folder will be something like::
-
-`~/.virtualenvs/icecream/lib/site-packages/`
-
-In the pathfile, you will want to include the following code (from
-virtualenvwrapper)::
-
-    import sys; sys.__plen = len(sys.path)
-    /home/<youruser>/icecream/icecream/
-    import sys; new=sys.path[sys.__plen:]; del sys.path[sys.__plen:]; p=getattr(sys,'__egginsert',0); sys.path[p:p]=new; sys.__egginsert = p+len(new)
+TBD
 
 Installing Django
 =================
