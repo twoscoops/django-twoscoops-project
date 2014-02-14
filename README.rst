@@ -52,8 +52,7 @@ There is a special version of virtualenvwrapper for use with Windows (https://py
 
     > mkdir icecream
     > mkvirtualenv icecream-dev
-    > cd icecream
-    > add2virtualenv %CD%
+    > add2virtualenv icecream
 
 
 Installing Django
