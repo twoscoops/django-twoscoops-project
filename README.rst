@@ -48,7 +48,12 @@ project path to the `site-directory` for you::
 Using virtualenvwrapper with Windows
 ----------------------------------------
 
-TBD
+There is a special version of virtualenvwrapper for use with Windows (https://pypi.python.org/pypi/virtualenvwrapper-win).::
+
+    > mkdir icecream
+    > mkvirtualenv icecream-dev
+    > add2virtualenv icecream
+
 
 Installing Django
 =================
