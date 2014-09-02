@@ -14,6 +14,20 @@ To use this project follow these steps:
 *note: these instructions show creation of a project called "icecream".  You
 should replace this name with the actual name of your project.*
 
+What about Django 1.7 (or higher)?
+==================================
+
+This project is meant to be paired with the Two Scoops of Django, which stop at 1.6. Since this is the case, we won't be upgrading this project for upcoming releases of Django.
+
+If you are looking for cutting edge Django templates, we recommend:
+
+* https://github.com/pydanny/cookiecutter-django
+* https://github.com/luzfcb/cookiecutter-django-oauth
+
+These (and many others) are powered by cookiecutter_, which is an awesome tool by Two Scoops of Django co-author, Audrey Roy.
+
+.. _cookiecutter: https://github.com/audreyr/cookiecutter
+
 Working Environment
 ===================
 
