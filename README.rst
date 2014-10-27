@@ -23,8 +23,9 @@ If you are looking for cutting edge Django templates, we recommend:
 
 * https://github.com/pydanny/cookiecutter-django
 * https://github.com/luzfcb/cookiecutter-django-oauth
+* https://github.com/imkevinxu/django-kevin
 
-These (and many others) are powered by cookiecutter_, which is an awesome tool by Audrey Roy, who happens to be one of the co-authors of Two Scoops of Django.
+Most of these (and many others) are powered by cookiecutter_, which is an awesome tool by Audrey Roy, who happens to be one of the co-authors of Two Scoops of Django.
 
 .. _cookiecutter: https://github.com/audreyr/cookiecutter
 
