@@ -17,12 +17,14 @@ should replace this name with the actual name of your project.*
 What about Django 1.7 (or higher)?
 ==================================
 
-This project is meant to be paired with the Two Scoops of Django, which stops at 1.6. Since this is the case, we won't be upgrading this project for upcoming releases of Django.
+This project is meant to be paired with the Two Scoops of Django 1.6 (which has been superseded by `Two Scoops of Django 1.8`_). Since this is the case, we won't be upgrading this project for upcoming releases of Django.
 
 If you are looking for cutting edge Django templates, we recommend:
 
 * https://github.com/imkevinxu/django-kevin (modernized port of this template)
 * https://github.com/pydanny/cookiecutter-django (bleeding edge)
+
+.. _`Two Scoops of Django 1.8`: http://twoscoopspress.com/products/two-scoops-of-django-1-8
 
 Working Environment
 ===================
